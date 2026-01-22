@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTask Tracker - RA1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚀 DevTask Tracker</h1>
+        <p>Gestor de tareas para desarrolladores</p>
+    </header>
+
+    <main>
+        <section id="form-container">
+            <h2>Nueva Tarea</h2>
+            <form id="task-form">
+                <input type="text" id="titulo" placeholder="Ej: Aprender Mongo..." required>
+                
+                <select id="tecnologia">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="NodeJS">NodeJS</option>
+                    <option value="MongoDB">MongoDB</option>
+                    <option value="React">React</option>
+                </select>
+
+                <button type="submit">Guardar Tarea</button>
+            </form>
+        </section>
+
+        <section id="tasks-container">
+            <h2>Lista de Tareas</h2>
+            <div id="tasks-list" class="grid-container">
+                <p class="loading">Cargando tareas...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
